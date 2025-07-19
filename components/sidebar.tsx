@@ -150,12 +150,13 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
       {!collapsed && (
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent dark:from-zinc-900 dark:to-transparent h-8 pointer-events-none"></div>
-          <div className="relative p-2">
+          <div className="relative p-2 pt-0 flex justify-center">
             <a
-              href="#"
+              href="https://www.destructo.dev"
+              target="_blank"
               className="text-xs font-mono text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
             >
-              made by John doe
+              Made by Vishal Kashi
             </a>
           </div>
         </div>
