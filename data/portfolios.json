@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Ava Smith",
+    "description": "Minimalist designer crafting sleek experiences",
+    "url": "https://www.perplexity.ai/hub",
+    "screenshot": "/screenshots/ava.png"
+  },
+  {
+    "id": 2,
+    "name": "Liam Johnson",
+    "description": "Full-stack dev with a love for animations",
+    "url": "https://liam.codes",
+    "screenshot": "/screenshots/liam.png"
+  },
+  {
+    "id": 3,
+    "name": "Sophia Martinez",
+    "description": "Brand identity and visual storytelling expert",
+    "url": "https://sophia.studio",
+    "screenshot": "/screenshots/sophia.png"
+  },
+  {
+    "id": 4,
+    "name": "Ethan Brown",
+    "description": "Building delightful web interactions",
+    "url": "https://ethan.dev",
+    "screenshot": "/screenshots/ethan.png"
+  },
+  {
+    "id": 5,
+    "name": "Maya Chen",
+    "description": "Creative technologist exploring digital art",
+    "url": "https://maya.art",
+    "screenshot": "/screenshots/maya.png"
+  },
+  {
+    "id": 6,
+    "name": "Alex Rivera",
+    "description": "UI/UX designer with a passion for accessibility",
+    "url": "https://alex.design",
+    "screenshot": "/screenshots/alex.png"
+  },
+    {
+    "id": 1,
+    "name": "Ava Smith",
+    "description": "Minimalist designer crafting sleek experiences",
+    "url": "https://ava.design",
+    "screenshot": "/screenshots/ava.png"
+  },
+  {
+    "id": 2,
+    "name": "Liam Johnson",
+    "description": "Full-stack dev with a love for animations",
+    "url": "https://liam.codes",
+    "screenshot": "/screenshots/liam.png"
+  },
+  {
+    "id": 3,
+    "name": "Sophia Martinez",
+    "description": "Brand identity and visual storytelling expert",
+    "url": "https://sophia.studio",
+    "screenshot": "/screenshots/sophia.png"
+  },
+  {
+    "id": 4,
+    "name": "Ethan Brown",
+    "description": "Building delightful web interactions",
+    "url": "https://ethan.dev",
+    "screenshot": "/screenshots/ethan.png"
+  },
+  {
+    "id": 5,
+    "name": "Maya Chen",
+    "description": "Creative technologist exploring digital art",
+    "url": "https://maya.art",
+    "screenshot": "/screenshots/maya.png"
+  },
+  {
+    "id": 6,
+    "name": "Alex Rivera",
+    "description": "UI/UX designer with a passion for accessibility",
+    "url": "https://alex.design",
+    "screenshot": "/screenshots/alex.png"
+  },
+    {
+    "id": 1,
+    "name": "Ava Smith",
+    "description": "Minimalist designer crafting sleek experiences",
+    "url": "https://ava.design",
+    "screenshot": "/screenshots/ava.png"
+  },
+  {
+    "id": 2,
+    "name": "Liam Johnson",
+    "description": "Full-stack dev with a love for animations",
+    "url": "https://liam.codes",
+    "screenshot": "/screenshots/liam.png"
+  },
+  {
+    "id": 3,
+    "name": "Sophia Martinez",
+    "description": "Brand identity and visual storytelling expert",
+    "url": "https://sophia.studio",
+    "screenshot": "/screenshots/sophia.png"
+  },
+  {
+    "id": 4,
+    "name": "Ethan Brown",
+    "description": "Building delightful web interactions",
+    "url": "https://ethan.dev",
+    "screenshot": "/screenshots/ethan.png"
+  },
+  {
+    "id": 5,
+    "name": "Maya Chen",
+    "description": "Creative technologist exploring digital art",
+    "url": "https://maya.art",
+    "screenshot": "/screenshots/maya.png"
+  },
+  {
+    "id": 6,
+    "name": "Alex Rivera",
+    "description": "UI/UX designer with a passion for accessibility",
+    "url": "https://alex.design",
+    "screenshot": "/screenshots/alex.png"
+  },
+    {
+    "id": 1,
+    "name": "Ava Smith",
+    "description": "Minimalist designer crafting sleek experiences",
+    "url": "https://ava.design",
+    "screenshot": "/screenshots/ava.png"
+  },
+  {
+    "id": 2,
+    "name": "Liam Johnson",
+    "description": "Full-stack dev with a love for animations",
+    "url": "https://liam.codes",
+    "screenshot": "/screenshots/liam.png"
+  },
+  {
+    "id": 3,
+    "name": "Sophia Martinez",
+    "description": "Brand identity and visual storytelling expert",
+    "url": "https://sophia.studio",
+    "screenshot": "/screenshots/sophia.png"
+  },
+  {
+    "id": 4,
+    "name": "Ethan Brown",
+    "description": "Building delightful web interactions",
+    "url": "https://ethan.dev",
+    "screenshot": "/screenshots/ethan.png"
+  },
+  {
+    "id": 5,
+    "name": "Maya Chen",
+    "description": "Creative technologist exploring digital art",
+    "url": "https://maya.art",
+    "screenshot": "/screenshots/maya.png"
+  },
+  {
+    "id": 6,
+    "name": "Alex Rivera",
+    "description": "UI/UX designer with a passion for accessibility",
+    "url": "https://alex.design",
+    "screenshot": "/screenshots/alex.png"
+  }
+]
