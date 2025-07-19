@@ -28,21 +28,28 @@ export default function Home() {
       {/* Header with controls */}
 
       {/* Main Layout */}
-      <div className="fixed inset-0 flex gap-6 p-6">
+      <div className="h-full w-full p-3">
         {/* Floating Sidebar */}
-        <div className={`${sidebarCollapsed ? 'w-16' : 'w-80'} h-full transition-all duration-300`}>
-          <Sidebar 
+        {/* <div className={`${sidebarCollapsed ? 'w-16' : 'w-80'} h-full transition-all duration-300`}>
+          <Sidebar
             onSelectPortfolio={handleSelectPortfolio}
             selectedPortfolio={selectedPortfolio}
             collapsed={sidebarCollapsed}
             setSidebarCollapsed={setSidebarCollapsed}
           />
-        </div>
+        </div> */}
 
         {/* Browser Mock */}
-        <div className="flex-1 h-full">
-          <BrowserMock portfolio={selectedPortfolio} />
-        </div>
+        {/* <div className="flex-1 h-full">
+          
+        </div> */}
+      <BrowserMock 
+            portfolio={selectedPortfolio}
+            onSelectPortfolio={handleSelectPortfolio}
+            selectedPortfolio={selectedPortfolio}
+            collapsed={sidebarCollapsed}
+            setSidebarCollapsed={setSidebarCollapsed}
+          />
       </div>
     </div>
   );

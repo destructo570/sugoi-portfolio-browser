@@ -31,54 +31,92 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
   }, [onSelectPortfolio, selectedPortfolio]);
 
   return (
-    <div className={`${collapsed ? 'w-16' : 'w-80'} h-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl flex flex-col relative overflow-hidden transition-all duration-300`}>
-      <div className="p-3 border-b border-zinc-200 dark:border-zinc-800 flex-shrink-0">
+    <div className={`${collapsed ? 'w-16' : 'w-80'} bg-zinc-100 dark:bg-zinc-800 h-full bg-white dark:bg-zinc-900 flex flex-col relative overflow-hidden transition-all duration-300`}>
+      <div className="p-3 pb-0 flex-shrink-0 align-self-start">
         {collapsed ? (
           <div className="flex justify-center">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setSidebarCollapsed(!collapsed)}
-              className="w-8 h-8 bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800"
-            >
-              <PanelLeft className="h-3 w-3" />
-            </Button>
+            <div className="text-sm text-zinc-600 dark:text-zinc-300 font-mono flex items-center gap-2 mb-1">
+
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setSidebarCollapsed(!collapsed)}
+                className="w-6 h-6 transition-all duration-200 hover:bg-zinc-200 dark:hover:bg-zinc-700"
+              >
+                <PanelLeft className="h-4 w-4" />
+              </Button>
+            </div>
+
           </div>
         ) : (
-          <div className="flex items-center justify-between">
+          <div className="flex justify-between items-start">
             <div>
               <h1 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
                 Sugoi
               </h1>
-              <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-1">
-                Portfolio creators
-              </p>
+
             </div>
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setSidebarCollapsed(!collapsed)}
-              className="w-8 h-8 bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800"
-            >
-              <PanelLeftClose className="h-3 w-3" />
-            </Button>
+            <div className="text-sm text-zinc-600 dark:text-zinc-300 font-mono flex items-center gap-2 mb-1">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setSidebarCollapsed(!collapsed)}
+                className="w-6 h-6 transition-all duration-200 hover:bg-zinc-200 dark:hover:bg-zinc-700"
+              >
+                <PanelLeftClose className="h-4 w-4" />
+              </Button>
+            </div>
+
           </div>
         )}
       </div>
+      {!collapsed ? <div className="min-h-[42px] flex items-center px-3 gap-3">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => setSidebarCollapsed(!collapsed)}
+          className="w-10 h-10 transition-all duration-200 bg-zinc-200/50 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-400"
+        >
+          <PanelLeftClose className="h-4 w-4" />
+        </Button>
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => setSidebarCollapsed(!collapsed)}
+          className="w-10 h-10 transition-all duration-200 bg-zinc-200/50 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+        >
+          <PanelLeftClose className="h-4 w-4" />
+        </Button>
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => setSidebarCollapsed(!collapsed)}
+          className="w-10 h-10 transition-all duration-200 bg-zinc-200/50 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+        >
+          <PanelLeftClose className="h-4 w-4" />
+        </Button>
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => setSidebarCollapsed(!collapsed)}
+          className="w-10 h-10 transition-all duration-200 bg-zinc-200/50 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+        >
+          <PanelLeftClose className="h-4 w-4" />
+        </Button>
+      </div> : null}
       <div className="flex-1 overflow-hidden relative">
         {/* Top blur bezel */}
-        <div className="absolute top-0 left-0 right-0 h-6 bg-gradient-to-b from-white to-transparent dark:from-zinc-900 dark:to-transparent z-10 pointer-events-none"></div>
-        
+        <div className="absolute top-0 left-0 right-0 h-6 bg-gradient-to-b from-zinc-100 to-transparent dark:from-zinc-900 dark:to-transparent z-10 pointer-events-none"></div>
+
         <ScrollArea className={`h-full ${collapsed ? 'p-2' : 'p-3'} [&>div>div]:!scrollbar-none [&>div>div]:!overflow-y-scroll`}>
           <div className={`${collapsed ? 'space-y-3' : 'space-y-2'}`}>
             {portfoliosData.map((portfolio) => (
               <div
                 key={portfolio.id}
-                className={`cursor-pointer transition-all duration-200 ${
-                  selectedPortfolio?.id === portfolio.id
-                    ? 'bg-zinc-100 dark:bg-zinc-800'
-                    : 'bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-800'
-                } ${collapsed ? 'rounded-lg p-2' : 'rounded-lg p-3'}`}
+                className={`cursor-pointer transition-all duration-200 ${selectedPortfolio?.id === portfolio.id
+                  ? 'bg-zinc-100 dark:bg-zinc-800'
+                  : 'bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                  } ${collapsed ? 'rounded-lg p-2' : 'rounded-lg p-3'}`}
                 onClick={() => onSelectPortfolio(portfolio)}
                 title={collapsed ? `${portfolio.name} - ${portfolio.description}` : undefined}
               >
@@ -108,13 +146,13 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
           </div>
         </ScrollArea>
       </div>
-      
+
       {!collapsed && (
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent dark:from-zinc-900 dark:to-transparent h-8 pointer-events-none"></div>
           <div className="relative p-2">
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="text-xs font-mono text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
             >
               made by John doe
