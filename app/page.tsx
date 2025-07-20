@@ -24,7 +24,7 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen bg-zinc-50 dark:bg-zinc-950 relative overflow-hidden">
+    <div className="h-screen relative overflow-hidden bg-gradient-to-r from-purple-200 via-violet-400 to-indigo-600 dark:bg-none dark:bg-zinc-950">
       {/* Header with controls */}
 
       {/* Main Layout */}
@@ -43,13 +43,13 @@ export default function Home() {
         {/* <div className="flex-1 h-full">
           
         </div> */}
-      <BrowserMock 
-            portfolio={selectedPortfolio}
-            onSelectPortfolio={handleSelectPortfolio}
-            selectedPortfolio={selectedPortfolio}
-            collapsed={sidebarCollapsed}
-            setSidebarCollapsed={setSidebarCollapsed}
-          />
+        <BrowserMock
+          portfolio={selectedPortfolio}
+          onSelectPortfolio={handleSelectPortfolio}
+          selectedPortfolio={selectedPortfolio}
+          collapsed={sidebarCollapsed}
+          setSidebarCollapsed={setSidebarCollapsed}
+        />
       </div>
     </div>
   );

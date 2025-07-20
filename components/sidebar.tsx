@@ -31,7 +31,7 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
   }, [onSelectPortfolio, selectedPortfolio]);
 
   return (
-    <div className={`${collapsed ? 'w-16' : 'w-80'} bg-zinc-100 dark:bg-zinc-800 h-full bg-white dark:bg-zinc-900 flex flex-col relative overflow-hidden transition-all duration-300`}>
+    <div className={`${collapsed ? 'w-16' : 'w-80'} bg-opacity-60 bg-zinc-100 dark:bg-zinc-800 h-full bg-white dark:bg-zinc-900 flex flex-col relative overflow-hidden transition-all duration-300`}>
       <div className="p-3 pb-0 flex-shrink-0 align-self-start">
         {collapsed ? (
           <div className="flex justify-center">
@@ -75,47 +75,24 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
           variant="ghost"
           size="icon"
           onClick={() => setSidebarCollapsed(!collapsed)}
-          className="w-10 h-10 transition-all duration-200 bg-zinc-200/50 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-400"
+          className="w-10 h-10 transition-all duration-200 bg-zinc-400/20 hover:bg-zinc-400/40 dark:bg-zinc-800 dark:hover:bg-zinc-700"
         >
           <PanelLeftClose className="h-4 w-4" />
         </Button>
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => setSidebarCollapsed(!collapsed)}
-          className="w-10 h-10 transition-all duration-200 bg-zinc-200/50 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
-        >
-          <PanelLeftClose className="h-4 w-4" />
-        </Button>
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => setSidebarCollapsed(!collapsed)}
-          className="w-10 h-10 transition-all duration-200 bg-zinc-200/50 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
-        >
-          <PanelLeftClose className="h-4 w-4" />
-        </Button>
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => setSidebarCollapsed(!collapsed)}
-          className="w-10 h-10 transition-all duration-200 bg-zinc-200/50 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
-        >
-          <PanelLeftClose className="h-4 w-4" />
-        </Button>
+
       </div> : null}
       <div className="flex-1 overflow-hidden relative">
         {/* Top blur bezel */}
-        <div className="absolute top-0 left-0 right-0 h-6 bg-gradient-to-b from-zinc-100 to-transparent dark:from-zinc-900 dark:to-transparent z-10 pointer-events-none"></div>
+        {/* <div className="absolute top-0 left-0 right-0 h-6 bg-gradient-to-b from-zinc-100 to-transparent dark:from-zinc-900 dark:to-transparent z-10 pointer-events-none"></div> */}
 
         <ScrollArea className={`h-full ${collapsed ? 'p-2' : 'p-3'} [&>div>div]:!scrollbar-none [&>div>div]:!overflow-y-scroll`}>
           <div className={`${collapsed ? 'space-y-3' : 'space-y-2'}`}>
             {portfoliosData.map((portfolio) => (
               <div
                 key={portfolio.id}
-                className={`cursor-pointer transition-all duration-200 ${selectedPortfolio?.id === portfolio.id
-                  ? 'bg-zinc-100 dark:bg-zinc-800'
-                  : 'bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                className={`cursor-pointer bg-transparent transition-all duration-200  ${selectedPortfolio?.id === portfolio.id
+                  ? 'bg-zinc-50/50 dark:bg-zinc-700 shadow-sm'
+                  : 'bg-transparent hover:bg-zinc-400/20 dark:hover:bg-zinc-800'
                   } ${collapsed ? 'rounded-lg p-2' : 'rounded-lg p-3'}`}
                 onClick={() => onSelectPortfolio(portfolio)}
                 title={collapsed ? `${portfolio.name} - ${portfolio.description}` : undefined}
@@ -149,7 +126,7 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
 
       {!collapsed && (
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent dark:from-zinc-900 dark:to-transparent h-8 pointer-events-none"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent dark:from-zinc-900 dark:to-transparent h-8 pointer-events-none"></div> */}
           <div className="relative p-2 pt-0 flex justify-center">
             <a
               href="https://www.destructo.dev"
