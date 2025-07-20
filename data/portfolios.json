@@ -183,8 +183,7 @@
     "id": 25,
     "name": "Keita Yamada",
     "description": "Website Crafter",
-    "url": "https://p5aholic.me/",
-    "profile": "https://avatars.githubusercontent.com/u/31267630?v=4"
+    "url": "https://p5aholic.me/"
   },
   {
     "id": 26,
@@ -223,11 +222,9 @@
   },
   {
     "id": 31,
-    "name": "Nanda Syahrasyad",
-    "description": "Writes about computers and stuff",
-    "url": "https://www.nan.fyi/",
-    "profile": "https://avatars.githubusercontent.com/u/31267630?v=4",
-    "github": "https://github.com/privatenumber"
+    "name": "Nandini Vyas",
+    "description": "Super adaptive designer building successful products that feel natural and just right",
+    "url": "https://nandinivyas.framer.website/"
   },
   {
     "id": 32,
