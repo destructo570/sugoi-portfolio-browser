@@ -1,170 +1,523 @@
 [
   {
     "id": 1,
-    "name": "Ava Smith",
-    "description": "Minimalist designer crafting sleek experiences",
-    "url": "https://www.perplexity.ai/hub",
-    "screenshot": "/screenshots/ava.png"
+    "name": "Anthony Fu",
+    "description": "Fanatical open sourceror",
+    "url": "https://antfu.me/",
+    "github": "https://github.com/antfu",
+    "profile": "https://avatars.githubusercontent.com/u/11247099?v=4"
   },
   {
     "id": 2,
-    "name": "Liam Johnson",
-    "description": "Full-stack dev with a love for animations",
-    "url": "https://liam.codes",
-    "screenshot": "/screenshots/liam.png"
+    "name": "Bruno Simon",
+    "description": "Creative developer",
+    "profile": "https://avatars.githubusercontent.com/u/5439991?v=4",
+    "url": "https://bruno-simon.com/",
+    "github": "https://github.com/brunosimon"
   },
   {
     "id": 3,
-    "name": "Sophia Martinez",
-    "description": "Brand identity and visual storytelling expert",
-    "url": "https://sophia.studio",
-    "screenshot": "/screenshots/sophia.png"
+    "name": "Lorenzo Dal Dosso",
+    "description": "Creative developer",
+    "url": "https://www.lorenzodaldosso.it/"
   },
   {
     "id": 4,
-    "name": "Ethan Brown",
-    "description": "Building delightful web interactions",
-    "url": "https://ethan.dev",
-    "screenshot": "/screenshots/ethan.png"
+    "name": "Regis Grumberg",
+    "description": "Creative developpeur & designer",
+    "url": "https://www.regisgrumberg.com/",
+    "github": "https://github.com/GRBgithub",
+    "profile": "https://avatars.githubusercontent.com/u/76528190?v=4"
   },
   {
     "id": 5,
-    "name": "Maya Chen",
+    "name": "Huyml",
     "description": "Creative technologist exploring digital art",
-    "url": "https://maya.art",
-    "screenshot": "/screenshots/maya.png"
+    "url": "https://huyml.co/about.html"
   },
   {
     "id": 6,
-    "name": "Alex Rivera",
-    "description": "UI/UX designer with a passion for accessibility",
-    "url": "https://alex.design",
-    "screenshot": "/screenshots/alex.png"
-  },
-    {
-    "id": 1,
-    "name": "Ava Smith",
-    "description": "Minimalist designer crafting sleek experiences",
-    "url": "https://ava.design",
-    "screenshot": "/screenshots/ava.png"
+    "name": "Henry Northington",
+    "description": "Writer, Creator, Brand Specialist",
+    "url": "https://www.henrynorthington.com/",
+    "profile": "https://assets.website-files.com/62bf127eaeec3d61cdd77091/62d1f48e3c33eb2176d3edc2_h-web-portrait-small-3-p-500.jpg"
   },
   {
-    "id": 2,
-    "name": "Liam Johnson",
-    "description": "Full-stack dev with a love for animations",
-    "url": "https://liam.codes",
-    "screenshot": "/screenshots/liam.png"
+    "id": 7,
+    "name": "Kenta Oshikura",
+    "description": "Web Designer & Developer",
+    "url": "https://kentatoshikura.com/about"
   },
   {
-    "id": 3,
-    "name": "Sophia Martinez",
-    "description": "Brand identity and visual storytelling expert",
-    "url": "https://sophia.studio",
-    "screenshot": "/screenshots/sophia.png"
+    "id": 8,
+    "name": "Henri Heymans",
+    "description": "Creative Developer",
+    "url": "https://www.henriheymans.com/",
+    "profile": "https://avatars.githubusercontent.com/u/36992715?v=4",
+    "github": "https://github.com/henriheymans"
   },
   {
-    "id": 4,
-    "name": "Ethan Brown",
-    "description": "Building delightful web interactions",
-    "url": "https://ethan.dev",
-    "screenshot": "/screenshots/ethan.png"
+    "id": 9,
+    "name": "Lee Rob",
+    "description": "Husband, Father & Engineer",
+    "url": "https://leerob.com/",
+    "profile": "https://avatars.githubusercontent.com/u/9113740?v=4",
+    "github": "https://github.com/leerob"
   },
   {
-    "id": 5,
-    "name": "Maya Chen",
+    "id": 10,
+    "name": "Jack Mcdade",
+    "description": "Someone tired of boring websites",
+    "url": "https://jackmcdade.com/",
+    "profile": "https://avatars.githubusercontent.com/u/44739?v=4",
+    "github": "https://github.com/jackmcdade"
+  },
+  {
+    "id": 11,
+    "name": "Daniel Spatzek",
     "description": "Creative technologist exploring digital art",
-    "url": "https://maya.art",
-    "screenshot": "/screenshots/maya.png"
+    "url": "https://www.danielspatzek.com/home/",
+    "profile": "/profiles/maya.png"
   },
   {
-    "id": 6,
-    "name": "Alex Rivera",
-    "description": "UI/UX designer with a passion for accessibility",
-    "url": "https://alex.design",
-    "screenshot": "/screenshots/alex.png"
-  },
-    {
-    "id": 1,
-    "name": "Ava Smith",
-    "description": "Minimalist designer crafting sleek experiences",
-    "url": "https://ava.design",
-    "screenshot": "/screenshots/ava.png"
+    "id": 12,
+    "name": "Joshw Comeau",
+    "description": "Solo Indie Hacker, Software Engineer",
+    "url": "https://www.joshwcomeau.com/",
+    "profile": "/profiles/alex.png"
   },
   {
-    "id": 2,
-    "name": "Liam Johnson",
-    "description": "Full-stack dev with a love for animations",
-    "url": "https://liam.codes",
-    "screenshot": "/screenshots/liam.png"
+    "id": 13,
+    "name": "Lynn Fisher",
+    "description": "Designer for the web",
+    "url": "https://lynnandtonic.com/",
+    "gtihub": "https://github.com/lynnandtonic",
+    "profile": "https://avatars.githubusercontent.com/u/871315?v=4"
   },
   {
-    "id": 3,
-    "name": "Sophia Martinez",
-    "description": "Brand identity and visual storytelling expert",
-    "url": "https://sophia.studio",
-    "screenshot": "/screenshots/sophia.png"
+    "id": 14,
+    "name": "Pierre Louis",
+    "description": "Creative Freelancer from France",
+    "url": "https://www.pierrelouis.design/"
   },
   {
-    "id": 4,
-    "name": "Ethan Brown",
-    "description": "Building delightful web interactions",
-    "url": "https://ethan.dev",
-    "screenshot": "/screenshots/ethan.png"
+    "id": 15,
+    "name": "Matteo Santoro",
+    "description": "Full-stack developer",
+    "url": "https://matteosantoro.dev/",
+    "profile": "https://avatars.githubusercontent.com/u/66700164?v=4",
+    "github": "https://github.com/Matt-code-d"
   },
   {
-    "id": 5,
-    "name": "Maya Chen",
-    "description": "Creative technologist exploring digital art",
-    "url": "https://maya.art",
-    "screenshot": "/screenshots/maya.png"
+    "id": 16,
+    "name": "Zuned Aalim",
+    "description": "Full-stack web developer",
+    "url": "https://zunedaalim.com/",
+    "profile": "https://avatars.githubusercontent.com/u/121401363?v=4",
+    "github": "https://github.com/zunedaalim"
   },
   {
-    "id": 6,
-    "name": "Alex Rivera",
-    "description": "UI/UX designer with a passion for accessibility",
-    "url": "https://alex.design",
-    "screenshot": "/screenshots/alex.png"
-  },
-    {
-    "id": 1,
-    "name": "Ava Smith",
-    "description": "Minimalist designer crafting sleek experiences",
-    "url": "https://ava.design",
-    "screenshot": "/screenshots/ava.png"
+    "id": 17,
+    "name": "Chánh Đại",
+    "description": "Software Developer & UI/UX Designer",
+    "url": "https://chanhdai.com/",
+    "profile": "https://avatars.githubusercontent.com/u/10192821?v=4",
+    "github": "https://github.com/ncdai"
   },
   {
-    "id": 2,
-    "name": "Liam Johnson",
-    "description": "Full-stack dev with a love for animations",
-    "url": "https://liam.codes",
-    "screenshot": "/screenshots/liam.png"
+    "id": 18,
+    "name": "Chris Coyier",
+    "description": "Web designer, developer, educator & business owner",
+    "url": "https://chriscoyier.net/",
+    "profile": "https://avatars.githubusercontent.com/u/69156?v=4",
+    "github": "https://github.com/chriscoyier"
   },
   {
-    "id": 3,
-    "name": "Sophia Martinez",
-    "description": "Brand identity and visual storytelling expert",
-    "url": "https://sophia.studio",
-    "screenshot": "/screenshots/sophia.png"
+    "id": 19,
+    "name": "Christian Kaisermann",
+    "description": "Web engineer & CSS enthusiast",
+    "url": "https://kaisermann.me/",
+    "profile": "https://avatars.githubusercontent.com/u/12702016?v=4",
+    "github": "https://github.com/kaisermann"
   },
   {
-    "id": 4,
-    "name": "Ethan Brown",
-    "description": "Building delightful web interactions",
-    "url": "https://ethan.dev",
-    "screenshot": "/screenshots/ethan.png"
+    "id": 20,
+    "name": "Constance Souville",
+    "description": "Frontend Developer",
+    "profile": "https://avatars.githubusercontent.com/u/5439991?v=4",
+    "url": "https://constancesouville.com/"
   },
   {
-    "id": 5,
-    "name": "Maya Chen",
-    "description": "Creative technologist exploring digital art",
-    "url": "https://maya.art",
-    "screenshot": "/screenshots/maya.png"
+    "id": 21,
+    "name": "Dustin Brett",
+    "description": "Self-Taught Senior Software Engineer, Traveler, Father & Husband",
+    "url": "https://dustinbrett.com/",
+    "profile": "https://avatars.githubusercontent.com/u/16656318?v=4",
+    "github": "https://github.com/DustinBrett"
   },
   {
-    "id": 6,
-    "name": "Alex Rivera",
-    "description": "UI/UX designer with a passion for accessibility",
-    "url": "https://alex.design",
-    "screenshot": "/screenshots/alex.png"
+    "id": 22,
+    "name": "Henrique",
+    "description": "Full-Stack Developer",
+    "url": "https://www.henriquecm.xyz/",
+    "github": "https://github.com/iamhenriquemachado",
+    "profile": "https://avatars.githubusercontent.com/u/174843186?v=4"
+  },
+  {
+    "id": 23,
+    "name": "Hisami Kurita",
+    "description": "Frontend Developer",
+    "url": "https://hsmkrt1996.com/",
+    "profile": "https://avatars.githubusercontent.com/u/47776346?v=4",
+    "github": "https://github.com/hisamikurita"
+  },
+  {
+    "id": 24,
+    "name": "Nanda Syahrasyad",
+    "description": "Writes about computers and stuff",
+    "url": "https://www.nan.fyi/",
+    "profile": "https://avatars.githubusercontent.com/u/31267630?v=4",
+    "github": "https://github.com/nandanmen"
+  },
+  {
+    "id": 25,
+    "name": "Keita Yamada",
+    "description": "Website Crafter",
+    "url": "https://p5aholic.me/",
+    "profile": "https://avatars.githubusercontent.com/u/31267630?v=4"
+  },
+  {
+    "id": 26,
+    "name": "Leonel Ngoya",
+    "description": "FrontEnd Developer and Awwwards Young Jury",
+    "url": "https://lndev.me/",
+    "profile": "https://avatars.githubusercontent.com/u/62269693?v=4",
+    "github": "https://github.com/ln-dev7"
+  },
+  {
+    "id": 27,
+    "name": "Nader Ferjani",
+    "description": "Full-stack Developer",
+    "url": "https://nader.run/",
+    "profile": "https://avatars.githubusercontent.com/u/81434423?v=4",
+    "github": "https://github.com/stormynight9"
+  },
+  {
+    "id": 28,
+    "name": "Nisarg Patel",
+    "description": "Web developer",
+    "url": "https://nisarg.io/"
+  },
+  {
+    "id": 29,
+    "name": "Atilla Taskiran",
+    "description": "An independent software designer from Germany",
+    "url": "https://atillataskiran.com/"
+  },
+  {
+    "id": 30,
+    "name": "Harry Alexandroff",
+    "description": "Multi-disciplinary UX/UI Designer with 8 years of experience",
+    "url": "https://alexandroff.design/",
+    "profile": "https://framerusercontent.com/images/jLTOphFQ2HwDbXC7XzbamKsPHA.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Nanda Syahrasyad",
+    "description": "Writes about computers and stuff",
+    "url": "https://www.nan.fyi/",
+    "profile": "https://avatars.githubusercontent.com/u/31267630?v=4",
+    "github": "https://github.com/privatenumber"
+  },
+  {
+    "id": 32,
+    "name": "Hiroki",
+    "description": "Software engineer specializing in web development infrastructure",
+    "url": "https://hirok.io/",
+    "profile": "https://avatars.githubusercontent.com/u/1075694?v=4",
+    "github": "https://github.com/privatenumber"
+  },
+  {
+    "id": 33,
+    "name": "Daniela Muntyan",
+    "description": "Product Designer at Figma",
+    "url": "https://danielamuntyan.com/"
+  },
+  {
+    "id": 34,
+    "name": "Sahil Vhora",
+    "description": "Senior freelance product designer",
+    "url": "https://iamsahilvhora.com/"
+  },
+  {
+    "id": 35,
+    "name": "Dávid Kálmán",
+    "description": "Software developer",
+    "url": "https://kalmandavid.dev/"
+  },
+  {
+    "id": 36,
+    "name": "Priyank Shah",
+    "description": "Product designer",
+    "url": "https://priyank.cv/"
+  },
+  {
+    "id": 37,
+    "name": "Curtis Upshall",
+    "description": "Frontend Developer",
+    "url": "https://www.curtisupshall.com/",
+    "profile": "https://avatars.githubusercontent.com/u/18599267?v=4",
+    "github": "https://github.com/curtisupshall"
+  },
+  {
+    "id": 38,
+    "name": "Luka Mlakar",
+    "description": "Co-founder at Flowout",
+    "url": "https://www.lukamlakar.com/"
+  },
+  {
+    "id": 39,
+    "name": "Jon Barber",
+    "description": "Designer building tools and experiences that help people",
+    "url": "https://jonbarber.co/",
+    "profile": "https://avatars.githubusercontent.com/u/12395932?v=4",
+    "github": "https://github.com/Jon-Barber"
+  },
+  {
+    "id": 40,
+    "name": "Ashraf Said",
+    "description": "Driven towards building out simple, functional and elegant applications",
+    "url": "https://asnine.me/",
+    "profile": "https://avatars.githubusercontent.com/u/70977697?v=4",
+    "github": "https://github.com/asninee"
+  },
+  {
+    "id": 41,
+    "name": "Bazza",
+    "description": "Software Engineer",
+    "url": "https://bazza.dev/"
+  },
+  {
+    "id": 42,
+    "name": "Andrés Martínez",
+    "description": "Software Engineer passionate about user interfaces and developer tooling",
+    "url": "https://www.andrs.me/",
+    "profile": "https://avatars.githubusercontent.com/u/78830288?v=4",
+    "github": "https://github.com/andresmarpz"
+  },
+  {
+    "id": 43,
+    "name": "Alana Goyal",
+    "description": "Founder & managing partner of basecase capital",
+    "url": "https://www.alanagoyal.com/",
+    "profile": "https://avatars.githubusercontent.com/u/17993385?v=4",
+    "github": "https://github.com/alanagoyal"
+  },
+  {
+    "id": 44,
+    "name": "Paul Faivret",
+    "description": "Interface Designer",
+    "url": "https://www.paulfaivret.com/"
+  },
+  {
+    "id": 45,
+    "name": "Yitong Zhang",
+    "description": "Designer from San Francisco.",
+    "url": "https://zhayitong.com/",
+    "profile": "https://avatars.githubusercontent.com/u/5835973?v=4",
+    "github": "https://github.com/yitongzhang"
+  },
+  {
+    "id": 46,
+    "name": "Aarav Sareen",
+    "description": "Design Engineer",
+    "url": "https://www.aarv.me/"
+  },
+  {
+    "id": 47,
+    "name": "Denis Abdullin",
+    "description": "product designer who creates clear & human-centered interfaces",
+    "url": "https://www.denisabdullin.com/"
+  },
+  {
+    "id": 48,
+    "name": "Florian",
+    "description": "Design Engineer",
+    "url": "https://floriankiem.com/",
+    "profile": "https://avatars.githubusercontent.com/u/92092993?v=4",
+    "github": "https://github.com/flornkm"
+  },
+  {
+    "id": 49,
+    "name": "Rishi Mohan",
+    "description": "Founder at DaSkrad",
+    "url": "https://rishimohan.me/",
+    "profile": "https://avatars.githubusercontent.com/u/14031295?v=4",
+    "github": "https://github.com/rishimohan"
+  },
+  {
+    "id": 50,
+    "name": "Josh",
+    "description": "Design engineer from New York",
+    "url": "https://www.joshuawolk.com/"
+  },
+  {
+    "id": 51,
+    "name": "Emin",
+    "description": "Multidisciplinary product designer specializing in systems, experience and interaction",
+    "url": "https://mammademin.com/"
+  },
+  {
+    "id": 52,
+    "name": "Daniel Sun",
+    "description": "Designer, crafting strong brands for SaaS and Web3",
+    "url": "https://danielsun.space/"
+  },
+  {
+    "id": 53,
+    "name": "Adam",
+    "description": "Product designer",
+    "url": "https://noff.me/"
+  },
+  {
+    "id": 54,
+    "name": "Jordan Singer",
+    "description": "Co-founder & CEO at Mainframe",
+    "url": "https://ibuildmyideas.com/",
+    "profile": "https://avatars.githubusercontent.com/u/110813?v=4",
+    "github": "https://github.com/jordansinger"
+  },
+  {
+    "id": 55,
+    "name": "Alexey Sekachov",
+    "description": "Product designer with passion for turning good ideas into great looking products",
+    "url": "https://asekachov.com/"
+  },
+  {
+    "id": 56,
+    "name": "Guo Chen",
+    "description": "Product designer who loves to build and write",
+    "url": "https://www.guochen.design/"
+  },
+  {
+    "id": 57,
+    "name": "Lokki",
+    "description": "Solo Entrepreneur",
+    "url": "https://lokki.framer.website/"
+  },
+  {
+    "id": 58,
+    "name": "Solomia Kravets",
+    "description": "Independent designer.",
+    "url": "https://www.kravetzzz.com/"
+  },
+  {
+    "id": 59,
+    "name": "Kevin Grajeda",
+    "description": "Developer creating innovative web applications",
+    "url": "https://www.kvin.me/",
+    "profile": "https://avatars.githubusercontent.com/u/60023139?v=4",
+    "github": "https://github.com/KevinGrajeda"
+  },
+  {
+    "id": 60,
+    "name": "Ayda",
+    "description": "Product designer",
+    "url": "https://www.aydaoz.co/"
+  },
+  {
+    "id": 61,
+    "name": "Cédric Moore",
+    "description": "Entrepreneur & Designer",
+    "url": "https://www.cedric.design/"
+  },
+  {
+    "id": 62,
+    "name": "Wojtek Witkowski",
+    "description": "Interaction designer",
+    "url": "https://wojtek.im/",
+    "profile": "https://avatars.githubusercontent.com/u/6843656?v=4",
+    "github": "https://github.com/pugson"
+  },
+  {
+    "id": 63,
+    "name": "Stuart Regan",
+    "description": "UX Designer",
+    "url": "https://stuart.re/",
+    "profile": "https://framerusercontent.com/images/XUjszj7oS9fVh3meshj29sJXpMw.jpg"
+  },
+  {
+    "id": 64,
+    "name": "Emil Kowalski",
+    "description": "Design Engineer",
+    "url": "https://emilkowal.ski/",
+    "profile": "https://avatars.githubusercontent.com/u/36730035?v=4",
+    "github": "https://github.com/emilkowalski"
+  },
+  {
+    "id": 65,
+    "name": "Carlos Melegrito",
+    "description": "Designer",
+    "url": "https://carlos-m.com/"
+  },
+  {
+    "id": 66,
+    "name": "Ben Fryc",
+    "description": "Artist, designer, animator, creative director, and educator.",
+    "url": "https://www.benfryc.com/"
+  },
+  {
+    "id": 67,
+    "name": "Carl Hauser",
+    "description": "Designer",
+    "url": "https://www.carlhauser.com/projects"
+  },
+  {
+    "id": 68,
+    "name": "TK Kinoshita",
+    "description": "Software engineer, writer, researcher",
+    "url": "https://www.iamtk.co/",
+    "profile": "https://avatars.githubusercontent.com/u/5835798?v=4",
+    "github": "https://github.com/imteekay"
+  },
+  {
+    "id": 69,
+    "name": "Julius Gehrig",
+    "description": "Product Designer",
+    "url": "https://julius.fm/"
+  },
+  {
+    "id": 70,
+    "name": "Rauno",
+    "description": "Design engineer",
+    "url": "https://rauno.me/",
+    "profile": "https://avatars.githubusercontent.com/u/23662329?v=4",
+    "github": "https://github.com/raunofreiberg"
+  },
+  {
+    "id": 71,
+    "name": "Pedro Duarte",
+    "description": "UI developer",
+    "url": "https://ped.ro/",
+    "profile": "https://avatars.githubusercontent.com/u/372831?v=4",
+    "github": "https://github.com/peduarte"
+  },
+  {
+    "id": 72,
+    "name": "Marco",
+    "description": "He design things.",
+    "url": "https://www.marco.fyi/"
+  },
+  {
+    "id": 73,
+    "name": "Sneha Sankar",
+    "description": "Brand designer and strategist",
+    "url": "https://snehasanks.com/"
+  },
+  {
+    "id": 74,
+    "name": "Marvin Schwaibold",
+    "description": "Product and Web Designer",
+    "url": "https://www.marvinschwaibold.com/"
   }
 ]

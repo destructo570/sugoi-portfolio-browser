@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { Card } from '@/components/ui/card';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import portfoliosData from '@/data/portfolios.json';
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 interface Portfolio {
   id: number;
@@ -106,7 +107,10 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
                 ) : (
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center text-white font-semibold text-xs">
-                      {portfolio.name.split(' ').map(n => n[0]).join('')}
+                    <Avatar>
+                      <AvatarImage src={portfolio?.profile} />
+                      <AvatarFallback>{portfolio.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                    </Avatar>
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="font-medium text-sm text-zinc-900 dark:text-zinc-100 truncate">
