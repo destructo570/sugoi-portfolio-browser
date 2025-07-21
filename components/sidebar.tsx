@@ -6,12 +6,14 @@ import { useEffect } from 'react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import portfoliosData from '@/data/portfolios.json';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
-import { Star } from "coolshapes-react"
+import { Logo } from "./icons/logo"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { cn, openExternalLink } from '@/lib/utils';
+import { Bricolage_Grotesque } from 'next/font/google';
 
 interface Portfolio {
   id: number;
@@ -27,6 +29,9 @@ interface SidebarProps {
   collapsed: boolean;
   setSidebarCollapsed: (collapsed: boolean) => void;
 }
+
+
+const bricolage = Bricolage_Grotesque({ subsets: ['latin'] });
 
 export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSidebarCollapsed }: SidebarProps) {
   useEffect(() => {
@@ -57,8 +62,7 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
         ) : (
           <div className="flex justify-between items-start">
             <div className="flex items-center gap-2">
-              <Star noise={true} className="w-4 h-4" />
-              <h1 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+              <h1 className={cn("text-sm font-semibold text-zinc-900 dark:text-zinc-100", bricolage.className)}>
                 Sugoi
               </h1>
 
@@ -84,7 +88,7 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => setSidebarCollapsed(!collapsed)}
+              onClick={() => openExternalLink("https://github.com/destructo570/sugoi-portfolio-browser")}
               className="w-10 h-10 transition-all duration-200 bg-zinc-400/20 hover:bg-zinc-400/40 dark:bg-zinc-800 dark:hover:bg-zinc-700"
             >
               <Github className="h-4 w-4" />
@@ -101,7 +105,7 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => setSidebarCollapsed(!collapsed)}
+              onClick={() => openExternalLink("https://coff.ee/destructo570")}
               className="w-10 h-10 transition-all duration-200 bg-zinc-400/20 hover:bg-zinc-400/40 dark:bg-zinc-800 dark:hover:bg-zinc-700"
             >
               <Coffee className="h-4 w-4" />
