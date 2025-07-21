@@ -12,7 +12,8 @@ interface Portfolio {
   name: string;
   description: string;
   url: string;
-  screenshot: string;
+  github?: string;
+  profile?: string;
 }
 
 export default function Home() {

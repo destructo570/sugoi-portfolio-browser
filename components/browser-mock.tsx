@@ -12,7 +12,8 @@ interface Portfolio {
   name: string;
   description: string;
   url: string;
-  screenshot: string;
+  github?: string;
+  profile?: string;
 }
 
 interface BrowserMockProps {
@@ -24,12 +25,8 @@ interface BrowserMockProps {
 }
 
 export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, collapsed, setSidebarCollapsed }: BrowserMockProps) {
-  const [imageError, setImageError] = useState(false);
   const [iframeKey, setIframeKey] = useState(0);
 
-  useEffect(() => {
-    setImageError(false);
-  }, [portfolio?.screenshot]);
 
   const handleReload = () => {
     setIframeKey(prev => prev + 1);

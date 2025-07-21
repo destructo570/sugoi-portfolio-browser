@@ -20,7 +20,8 @@ interface Portfolio {
   name: string;
   description: string;
   url: string;
-  screenshot: string;
+  github?: string;
+  profile?: string;
 }
 
 interface SidebarProps {
@@ -46,7 +47,7 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
       <div className="p-3 pb-0 flex-shrink-0 align-self-start">
         {collapsed ? (
           <div className="flex justify-center">
-            <div className="text-sm text-zinc-600 dark:text-zinc-300 font-mono flex items-center gap-2 mb-1">
+            <div className="text-sm text-zinc-600 dark:text-zinc-300 font-mono flex items-center gap-2 mb-1 mt-1">
 
               <Button
                 variant="ghost"
@@ -60,14 +61,13 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
 
           </div>
         ) : (
-          <div className="flex justify-between items-start">
+          <div className="flex justify-between">
             <div className="flex items-center gap-2">
               <h1 className={cn("text-sm font-semibold text-zinc-900 dark:text-zinc-100", bricolage.className)}>
-                Sugoi
+              Sugoi
               </h1>
-
             </div>
-            <div className="text-sm text-zinc-600 dark:text-zinc-300 font-mono flex items-center gap-2 mb-1">
+            <div className="text-sm text-zinc-600 dark:text-zinc-300 font-mono mt-1">
               <Button
                 variant="ghost"
                 size="icon"
