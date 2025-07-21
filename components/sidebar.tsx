@@ -132,13 +132,16 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
               >
                 {collapsed ? (
                   <div className="flex justify-center">
-                    <div className="w-8 h-8 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center text-white font-semibold text-xs">
-                      {portfolio.name.split(' ').map(n => n[0]).join('')}
+                    <div className="w-8 h-8 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center text-zinc-700 dark:text-white font-semibold text-xs">
+                      <Avatar>
+                        <AvatarImage src={portfolio?.profile} />
+                        <AvatarFallback>{portfolio.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                      </Avatar>
                     </div>
                   </div>
                 ) : (
                   <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center text-white font-semibold text-xs">
+                    <div className="w-8 h-8 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center text-zinc-700 dark:text-white font-semibold text-xs">
                       <Avatar>
                         <AvatarImage src={portfolio?.profile} />
                         <AvatarFallback>{portfolio.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
