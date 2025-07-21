@@ -1,12 +1,17 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { PanelLeft, PanelLeftClose } from 'lucide-react';
+import { PanelLeft, PanelLeftClose, Github, Coffee } from 'lucide-react';
 import { useEffect } from 'react';
-import { Card } from '@/components/ui/card';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import portfoliosData from '@/data/portfolios.json';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import { Star } from "coolshapes-react"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 interface Portfolio {
   id: number;
@@ -51,7 +56,8 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
           </div>
         ) : (
           <div className="flex justify-between items-start">
-            <div>
+            <div className="flex items-center gap-2">
+              <Star noise={true} className="w-4 h-4" />
               <h1 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
                 Sugoi
               </h1>
@@ -72,14 +78,40 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
         )}
       </div>
       {!collapsed ? <div className="min-h-[42px] flex items-center px-3 gap-3">
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => setSidebarCollapsed(!collapsed)}
-          className="w-10 h-10 transition-all duration-200 bg-zinc-400/20 hover:bg-zinc-400/40 dark:bg-zinc-800 dark:hover:bg-zinc-700"
-        >
-          <PanelLeftClose className="h-4 w-4" />
-        </Button>
+        <Tooltip>
+          <TooltipTrigger asChild>
+
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setSidebarCollapsed(!collapsed)}
+              className="w-10 h-10 transition-all duration-200 bg-zinc-400/20 hover:bg-zinc-400/40 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+            >
+              <Github className="h-4 w-4" />
+            </Button>
+
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Fork on Github</p>
+          </TooltipContent>
+        </Tooltip>
+
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setSidebarCollapsed(!collapsed)}
+              className="w-10 h-10 transition-all duration-200 bg-zinc-400/20 hover:bg-zinc-400/40 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+            >
+              <Coffee className="h-4 w-4" />
+            </Button>
+
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Buy me a coffee</p>
+          </TooltipContent>
+        </Tooltip>
 
       </div> : null}
       <div className="flex-1 overflow-hidden relative">
@@ -107,10 +139,10 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
                 ) : (
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center text-white font-semibold text-xs">
-                    <Avatar>
-                      <AvatarImage src={portfolio?.profile} />
-                      <AvatarFallback>{portfolio.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                    </Avatar>
+                      <Avatar>
+                        <AvatarImage src={portfolio?.profile} />
+                        <AvatarFallback>{portfolio.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                      </Avatar>
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="font-medium text-sm text-zinc-900 dark:text-zinc-100 truncate">
