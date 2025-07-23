@@ -38,13 +38,6 @@
     "github": "https://github.com/retrogtx"
   },
   {
-    "id": 6,
-    "name": "Henry Northington",
-    "description": "Writer, Creator, Brand Specialist",
-    "url": "https://www.henrynorthington.com/",
-    "profile": "https://assets.website-files.com/62bf127eaeec3d61cdd77091/62d1f48e3c33eb2176d3edc2_h-web-portrait-small-3-p-500.jpg"
-  },
-  {
     "id": 7,
     "name": "Kenta Oshikura",
     "description": "Web Designer & Developer",
@@ -146,7 +139,6 @@
     "id": 20,
     "name": "Constance Souville",
     "description": "Frontend Developer",
-    "profile": "https://avatars.githubusercontent.com/u/5439991?v=4",
     "url": "https://constancesouville.com/"
   },
   {
