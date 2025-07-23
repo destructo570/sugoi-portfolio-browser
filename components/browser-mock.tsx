@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight, Minus, RotateCcw, Square, X } from 'lucide-react
 import { useState, useEffect } from 'react';
 import { ThemeToggle } from './theme-toggle';
 import { Sidebar } from './sidebar';
+import { toast } from 'sonner';
 
 interface Portfolio {
   id: number;
@@ -105,7 +106,7 @@ export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, c
             </div>
 
             {/* URL Bar */}
-            <div className="bg-white dark:bg-zinc-700 rounded-lg px-3 py-2 border border-zinc-300 dark:border-zinc-600 flex items-center gap-3">
+            <div className="bg-white dark:bg-zinc-700 rounded-lg px-2 py-2 border border-zinc-300 dark:border-zinc-600 flex items-center gap-3">
               <Button
                 variant="ghost"
                 size="icon"
@@ -114,7 +115,12 @@ export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, c
               >
                 <RotateCcw className="h-3 w-3 text-zinc-500 dark:text-zinc-400" />
               </Button>
-              <span className="text-sm text-zinc-600 dark:text-zinc-300 font-mono flex-1">
+              <span className="text-sm text-zinc-600 dark:text-zinc-300 font-mono flex-1" onClick={() => {
+                navigator.clipboard.writeText(displayUrl);
+                toast.success('Copied to clipboard', {
+                  position: 'top-right',
+                });
+              }}>
                 {displayUrl}
               </span>
             </div>

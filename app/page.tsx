@@ -6,6 +6,8 @@ import { BrowserMock } from '@/components/browser-mock';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { Button } from '@/components/ui/button';
 import { PanelLeft, PanelLeftClose } from 'lucide-react';
+import { Toaster } from "@/components/ui/sonner"
+
 
 interface Portfolio {
   id: number;
@@ -27,23 +29,9 @@ export default function Home() {
   return (
     <div className="h-screen relative overflow-hidden bg-gradient-to-r from-purple-200 via-violet-400 to-indigo-600 dark:bg-none dark:bg-zinc-950">
       {/* Header with controls */}
-
+      <Toaster />
       {/* Main Layout */}
       <div className="h-full w-full p-3">
-        {/* Floating Sidebar */}
-        {/* <div className={`${sidebarCollapsed ? 'w-16' : 'w-80'} h-full transition-all duration-300`}>
-          <Sidebar
-            onSelectPortfolio={handleSelectPortfolio}
-            selectedPortfolio={selectedPortfolio}
-            collapsed={sidebarCollapsed}
-            setSidebarCollapsed={setSidebarCollapsed}
-          />
-        </div> */}
-
-        {/* Browser Mock */}
-        {/* <div className="flex-1 h-full">
-          
-        </div> */}
         <BrowserMock
           portfolio={selectedPortfolio}
           onSelectPortfolio={handleSelectPortfolio}
