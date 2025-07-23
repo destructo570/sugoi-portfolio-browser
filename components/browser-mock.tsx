@@ -31,10 +31,9 @@ export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, c
   const handleReload = () => {
     setIframeKey(prev => prev + 1);
   };
-  // Default to Perplexity if no portfolio selected
-  const displayUrl = portfolio?.url || 'https://www.perplexity.ai/hub';
-  const displayName = portfolio?.name || 'Perplexity Hub';
-  const displayDescription = portfolio?.description || 'AI-powered search and discovery';
+  const displayUrl = portfolio?.url || '';
+  const displayName = portfolio?.name || '';
+  const displayDescription = portfolio?.description || '';
 
   return (
     <div className="h-full w-full flex flex-col bevel-3d bg-indigo-500">
