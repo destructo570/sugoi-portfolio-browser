@@ -131,7 +131,7 @@ export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, c
             <div className="h-full overflow-auto rounded-lg  shadow-md">
               <div className="h-full flex items-center justify-center">
                 <iframe
-                  key={iframeKey}
+                  key={displayUrl}
                   src={displayUrl}
                   className="w-full h-full border-0"
                   title={displayName}
