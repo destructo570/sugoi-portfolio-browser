@@ -19,12 +19,7 @@ interface Portfolio {
 }
 
 export default function Home() {
-  const [selectedPortfolio, setSelectedPortfolio] = useState<Portfolio | null>(null);
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
-  const handleSelectPortfolio = (portfolio: Portfolio) => {
-    setSelectedPortfolio(portfolio);
-  };
 
   return (
     <div className="h-screen relative overflow-hidden bg-gradient-to-r from-purple-200 via-violet-400 to-indigo-600 dark:bg-none dark:bg-zinc-950">
@@ -32,13 +27,7 @@ export default function Home() {
       <Toaster />
       {/* Main Layout */}
       <div className="h-full w-full p-3">
-        <BrowserMock
-          portfolio={selectedPortfolio}
-          onSelectPortfolio={handleSelectPortfolio}
-          selectedPortfolio={selectedPortfolio}
-          collapsed={sidebarCollapsed}
-          setSidebarCollapsed={setSidebarCollapsed}
-        />
+        <BrowserMock/>
       </div>
     </div>
   );

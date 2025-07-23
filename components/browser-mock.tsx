@@ -27,20 +27,25 @@ interface BrowserMockProps {
 }
 
 
-export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, collapsed, setSidebarCollapsed }: BrowserMockProps) {
+export function BrowserMock() {
   const [iframeKey, setIframeKey] = useState(0);
   const [loading, setLoading] = useState(false);
 
+  const [selectedPortfolio, setSelectedPortfolio] = useState<Portfolio | null>(null);
+  const [collapsed, setSidebarCollapsed] = useState(false);
+
+  const handleSelectPortfolio = (portfolio: Portfolio) => {
+    setSelectedPortfolio(portfolio);
+    handleReload()
+  };
+
   useEffect(() => {
     setLoading(true);
-  }, [portfolio?.url]);
+  }, [selectedPortfolio?.url]);
 
   const handleReload = () => {
     setIframeKey(prev => prev + 1);
   };
-  const displayUrl = portfolio?.url || '';
-  const displayName = portfolio?.name || '';
-  const displayDescription = portfolio?.description || '';
 
   return (
     <div className="h-full w-full flex flex-col bevel-3d bg-indigo-500">
@@ -48,10 +53,7 @@ export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, c
 
         <div className={`${collapsed ? 'w-16' : 'w-80'} h-full transition-all duration-300`}>
           <Sidebar
-            onSelectPortfolio={(portfolio) => {
-              onSelectPortfolio(portfolio);
-              handleReload()
-            }}
+            onSelectPortfolio={handleSelectPortfolio}
             selectedPortfolio={selectedPortfolio}
             collapsed={collapsed}
             setSidebarCollapsed={setSidebarCollapsed}
@@ -125,12 +127,12 @@ export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, c
                 <RotateCcw className="h-3 w-3 text-zinc-500 dark:text-zinc-400" />
               </Button>
               <span className="text-sm text-zinc-600 dark:text-zinc-300 font-mono flex-1" onClick={() => {
-                navigator.clipboard.writeText(displayUrl);
+                navigator.clipboard.writeText(selectedPortfolio?.url || '');
                 toast.success('Copied to clipboard', {
                   position: 'top-right',
                 });
               }}>
-                {displayUrl}
+                {selectedPortfolio?.url}
               </span>
             </div>
           </div>
@@ -142,13 +144,12 @@ export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, c
                 {loading ? <Loader /> : null}
                 <iframe
                   key={iframeKey}
-                  src={displayUrl}
+                  src={selectedPortfolio?.url}
                   className={`h-full border-0 ${loading ? 'opacity-0 w-0' : 'opacity-100 w-full'}`}
                   onLoad={() => setLoading(false)}
-                  title={displayName}
+                  title={selectedPortfolio?.name}
                   sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-top-navigation"
-                />
-              </div>
+                />              </div>
             </div>
           </div>
         </div>

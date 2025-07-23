@@ -6,7 +6,6 @@ import { useEffect } from 'react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import portfoliosData from '@/data/portfolios.json';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
-import { Logo } from "./icons/logo"
 import {
   Tooltip,
   TooltipContent,
@@ -35,10 +34,13 @@ interface SidebarProps {
 const bricolage = Bricolage_Grotesque({ subsets: ['latin'] });
 
 export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSidebarCollapsed }: SidebarProps) {
+
+  const sortedPortfolios = portfoliosData.sort((a, b) => a.name.localeCompare(b.name));
+  
   useEffect(() => {
     // Auto-select first portfolio if none selected
-    if (portfoliosData.length > 0 && !selectedPortfolio) {
-      onSelectPortfolio(portfoliosData[0]);
+    if (sortedPortfolios.length > 0 && !selectedPortfolio) {
+      onSelectPortfolio(sortedPortfolios[0]);
     }
   }, [onSelectPortfolio, selectedPortfolio]);
 
@@ -124,7 +126,7 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
 
         <ScrollArea className={`h-full ${collapsed ? 'p-2' : 'p-3'} [&>div>div]:!scrollbar-none [&>div>div]:!overflow-y-scroll`}>
           <div className={`${collapsed ? 'space-y-3' : 'space-y-2'}`}>
-            {portfoliosData.map((portfolio) => (
+            {sortedPortfolios.map((portfolio) => (
               <div
                 key={portfolio.id}
                 className={`cursor-pointer bg-transparent transition-all duration-200  ${selectedPortfolio?.id === portfolio.id
