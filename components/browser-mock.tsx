@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { ThemeToggle } from './theme-toggle';
 import { Sidebar } from './sidebar';
 import { toast } from 'sonner';
+import Loader from './loader/loader';
 
 interface Portfolio {
   id: number;
@@ -25,9 +26,14 @@ interface BrowserMockProps {
   setSidebarCollapsed: (collapsed: boolean) => void;
 }
 
+
 export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, collapsed, setSidebarCollapsed }: BrowserMockProps) {
   const [iframeKey, setIframeKey] = useState(0);
+  const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    setLoading(true);
+  }, [portfolio?.url]);
 
   const handleReload = () => {
     setIframeKey(prev => prev + 1);
@@ -42,7 +48,10 @@ export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, c
 
         <div className={`${collapsed ? 'w-16' : 'w-80'} h-full transition-all duration-300`}>
           <Sidebar
-            onSelectPortfolio={onSelectPortfolio}
+            onSelectPortfolio={(portfolio) => {
+              onSelectPortfolio(portfolio);
+              handleReload()
+            }}
             selectedPortfolio={selectedPortfolio}
             collapsed={collapsed}
             setSidebarCollapsed={setSidebarCollapsed}
@@ -130,10 +139,12 @@ export function BrowserMock({ portfolio, onSelectPortfolio, selectedPortfolio, c
           <div className="flex-1 bg-opacity-60 bg-zinc-100 dark:bg-zinc-800 overflow-hidden p-3 pb-[100px] h-full">
             <div className="h-full overflow-auto rounded-lg  shadow-md">
               <div className="h-full flex items-center justify-center">
+                {loading ? <Loader /> : null}
                 <iframe
-                  key={displayUrl}
+                  key={iframeKey}
                   src={displayUrl}
-                  className="w-full h-full border-0"
+                  className={`h-full border-0 ${loading ? 'opacity-0 w-0' : 'opacity-100 w-full'}`}
+                  onLoad={() => setLoading(false)}
                   title={displayName}
                   sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-top-navigation"
                 />

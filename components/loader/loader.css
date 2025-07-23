@@ -1,0 +1,60 @@
+:root {
+    --container-w: 640; /* no units so we can do division */
+    --container-h: 480; /* no units so we can do division */
+    --logo-w: 80px;
+    --logo-h: 40px;
+    --duration-y: 2s;
+    --aspect: calc(var(--container-w) / var(--container-h));
+    --duration-x: calc(var(--duration-y) * var(--aspect));
+  }
+  
+  .container {
+    position: relative;
+    /* width: calc(var(--container-w) * 1px);
+    height: calc(var(--container-h) * 1px); */
+    border: 1px solid black;
+    margin: auto;
+  }
+  
+  .logo {
+    position: absolute;
+    width: var(--logo-w);
+    height: var(--logo-h);
+    animation:
+      x var(--duration-x) linear infinite alternate,
+      y var(--duration-y) linear infinite alternate,
+      colorX calc(var(--duration-x) * 5) step-start infinite,
+      colorY calc(var(--duration-y) * 5) step-start infinite;
+    color:
+      hsl(calc(
+        360 / 25 * (var(--color-y) * 5 + var(--color-x)) * 1deg
+      ) 100% 50%);
+  }
+  
+  @keyframes x {
+    from { left: 0; }
+    to { left: calc(100% - var(--logo-w)); }
+  }
+  
+  @keyframes y {
+    from { top: 0; }
+    to { top: calc(100% - var(--logo-h)); }
+  }
+  
+  @keyframes colorX {
+    from { --color--x: 0; }
+    20% { --color-x: 2; }
+    40% { --color-x: 4; }
+    60% { --color-x: 1; }
+    80% { --color-x: 3; }
+    to { --color-x: 0; }
+  }
+  
+  @keyframes colorY {
+    from { --color-y: 0; }
+    20% { --color-y: 2; }
+    40% { --color-y: 4; }
+    60% { --color-y: 1; }
+    80% { --color-y: 3; }
+    to { --color-y: 0; }
+  }
