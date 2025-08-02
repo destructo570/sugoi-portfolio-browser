@@ -508,5 +508,11 @@
     "name": "Huyml",
     "description": "Creative technologist exploring digital art",
     "url": "https://huyml.co/about.html"
+  },
+  {
+    "id": 76,
+    "name": "Trish",
+    "description": "Backend developer who loves building things that work well",
+    "url": "https://devlogs.xyz/"
   }
 ]
