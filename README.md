@@ -79,6 +79,7 @@ A curated collection of standout portfolio inspirations and impressive personal 
 - [Sneha Sankar](https://snehasanks.com/)
 - [Marvin Schwaibold](https://www.marvinschwaibold.com/)
 - [Huyml](https://huyml.co/about.html)
+- [Trish](https://devlogs.xyz/about)
 
 </details>
 
