@@ -102,23 +102,6 @@ export function Sidebar({ onSelectPortfolio, selectedPortfolio, collapsed, setSi
           </TooltipContent>
         </Tooltip>
 
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => openExternalLink("https://coff.ee/destructo570")}
-              className="w-10 h-10 transition-all duration-200 bg-zinc-400/20 hover:bg-zinc-400/40 dark:bg-zinc-800 dark:hover:bg-zinc-700"
-            >
-              <Coffee className="h-4 w-4" />
-            </Button>
-
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>Buy me a coffee</p>
-          </TooltipContent>
-        </Tooltip>
-
       </div> : null}
       <div className="flex-1 overflow-hidden relative">
         {/* Top blur bezel */}
