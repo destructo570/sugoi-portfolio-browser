@@ -8,6 +8,10 @@ import { ThemeToggle } from './theme-toggle';
 import { Sidebar } from './sidebar';
 import { toast } from 'sonner';
 import Loader from './loader/loader';
+import { MobileNav } from './mobile-nav';
+import portfoliosData from '@/data/portfolios.json';
+
+const sortedPortfolios = [...portfoliosData].sort((a, b) => a.name.localeCompare(b.name));
 
 interface Portfolio {
   id: number;
@@ -51,7 +55,7 @@ export function BrowserMock() {
     <div className="h-full w-full flex flex-col bevel-3d bg-indigo-500">
       <Card className="h-full bg-opacity-30 bg-zinc-300 dark:bg-zinc-900 rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-800 flex flex-row h-full">
 
-        <div className={`${collapsed ? 'w-16' : 'w-80'} h-full transition-all duration-300`}>
+        <div className={`${collapsed ? 'w-16' : 'w-80'} hidden md:block h-full shrink-0 transition-all duration-300`}>
           <Sidebar
             onSelectPortfolio={handleSelectPortfolio}
             selectedPortfolio={selectedPortfolio}
@@ -59,7 +63,7 @@ export function BrowserMock() {
             setSidebarCollapsed={setSidebarCollapsed}
           />
         </div>
-        <div className="w-full">
+        <div className="w-full min-w-0">
           {/* Browser Toolbar */}
           <div className="bg-opacity-60 bg-zinc-100 dark:bg-opacity-100 dark:bg-zinc-800 px-3 pt-3 border-zinc-200 dark:border-zinc-700 flex-shrink-0">
             <div className="flex justify-between items-center">
@@ -85,7 +89,7 @@ export function BrowserMock() {
                 </div>
               </div>
               {/* Traffic Light Buttons */}
-              <div className="flex items-center space-x-2 mb-3">
+              <div className="hidden md:flex items-center space-x-2 mb-3">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -126,7 +130,7 @@ export function BrowserMock() {
               >
                 <RotateCcw className="h-3 w-3 text-zinc-500 dark:text-zinc-400" />
               </Button>
-              <span className="text-sm text-zinc-600 dark:text-zinc-300 font-mono flex-1" onClick={() => {
+              <span className="text-sm text-zinc-600 dark:text-zinc-300 font-mono flex-1 min-w-0 truncate" onClick={() => {
                 navigator.clipboard.writeText(selectedPortfolio?.url || '');
                 toast.success('Copied to clipboard', {
                   position: 'top-right',
@@ -138,7 +142,7 @@ export function BrowserMock() {
           </div>
 
           {/* Viewport */}
-          <div className="flex-1 bg-opacity-60 bg-zinc-100 dark:bg-zinc-800 overflow-hidden p-3 pb-[100px] h-full">
+          <div className="flex-1 bg-opacity-60 bg-zinc-100 dark:bg-zinc-800 overflow-hidden p-3 pb-[170px] md:pb-[100px] h-full">
             <div className="h-full overflow-auto rounded-lg  shadow-md">
               <div className="h-full flex items-center justify-center">
                 {loading ? <Loader /> : null}
@@ -154,6 +158,11 @@ export function BrowserMock() {
           </div>
         </div>
       </Card>
+      <MobileNav
+        portfolios={sortedPortfolios}
+        selectedPortfolio={selectedPortfolio}
+        onSelectPortfolio={handleSelectPortfolio}
+      />
     </div>
   );
 }

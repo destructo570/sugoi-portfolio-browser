@@ -22,7 +22,7 @@ export default function Home() {
 
 
   return (
-    <div className="h-screen relative overflow-hidden bg-gradient-to-r from-purple-200 via-violet-400 to-indigo-600 dark:bg-none dark:bg-zinc-950">
+    <div className="h-screen h-[100dvh] relative overflow-hidden bg-gradient-to-r from-purple-200 via-violet-400 to-indigo-600 dark:bg-none dark:bg-zinc-950">
       {/* Header with controls */}
       <Toaster />
       {/* Main Layout */}
