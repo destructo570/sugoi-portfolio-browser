@@ -26,7 +26,7 @@ export default function Home() {
       {/* Header with controls */}
       <Toaster />
       {/* Main Layout */}
-      <div className="h-full w-full p-3">
+      <div className="h-full w-full lg:p-3">
         <BrowserMock/>
       </div>
     </div>

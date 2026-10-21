@@ -53,9 +53,9 @@ export function BrowserMock() {
 
   return (
     <div className="h-full w-full flex flex-col bevel-3d bg-indigo-500">
-      <Card className="h-full bg-opacity-30 bg-zinc-300 dark:bg-zinc-900 rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-800 flex flex-row h-full">
+      <Card className="h-full bg-opacity-30 bg-zinc-300 dark:bg-zinc-900 rounded-none lg:rounded-xl overflow-hidden border-0 lg:border border-zinc-200 dark:border-zinc-800 flex flex-row h-full">
 
-        <div className={`${collapsed ? 'w-16' : 'w-80'} hidden md:block h-full shrink-0 transition-all duration-300`}>
+        <div className={`${collapsed ? 'w-16' : 'w-80'} hidden lg:block h-full shrink-0 transition-all duration-300`}>
           <Sidebar
             onSelectPortfolio={handleSelectPortfolio}
             selectedPortfolio={selectedPortfolio}
@@ -65,7 +65,7 @@ export function BrowserMock() {
         </div>
         <div className="w-full min-w-0">
           {/* Browser Toolbar */}
-          <div className="bg-opacity-60 bg-zinc-100 dark:bg-opacity-100 dark:bg-zinc-800 px-3 pt-3 border-zinc-200 dark:border-zinc-700 flex-shrink-0">
+          <div className="hidden lg:block bg-opacity-60 bg-zinc-100 dark:bg-opacity-100 dark:bg-zinc-800 px-3 pt-3 border-zinc-200 dark:border-zinc-700 flex-shrink-0">
             <div className="flex justify-between items-center">
               <div className="text-sm text-zinc-600 dark:text-zinc-300 font-mono flex items-center gap-2 mb-1">
                 <Button
@@ -89,7 +89,7 @@ export function BrowserMock() {
                 </div>
               </div>
               {/* Traffic Light Buttons */}
-              <div className="hidden md:flex items-center space-x-2 mb-3">
+              <div className="flex items-center space-x-2 mb-3">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -142,8 +142,8 @@ export function BrowserMock() {
           </div>
 
           {/* Viewport */}
-          <div className="flex-1 bg-opacity-60 bg-zinc-100 dark:bg-zinc-800 overflow-hidden p-3 pb-[170px] md:pb-[100px] h-full">
-            <div className="h-full overflow-auto rounded-lg  shadow-md">
+          <div className="flex-1 lg:bg-opacity-60 bg-zinc-100 dark:bg-zinc-800 overflow-hidden pb-[calc(5rem+env(safe-area-inset-bottom))] lg:p-3 lg:pb-[100px] h-full">
+            <div className="h-full overflow-auto lg:rounded-lg lg:shadow-md">
               <div className="h-full flex items-center justify-center">
                 {loading ? <Loader /> : null}
                 <iframe
