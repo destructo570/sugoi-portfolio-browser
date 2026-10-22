@@ -63,7 +63,7 @@ export function BrowserMock() {
             setSidebarCollapsed={setSidebarCollapsed}
           />
         </div>
-        <div className="w-full min-w-0">
+        <div className="w-full min-w-0 flex flex-col lg:block">
           {/* Browser Toolbar */}
           <div className="hidden lg:block bg-opacity-60 bg-zinc-100 dark:bg-opacity-100 dark:bg-zinc-800 px-3 pt-3 border-zinc-200 dark:border-zinc-700 flex-shrink-0">
             <div className="flex justify-between items-center">
@@ -142,7 +142,7 @@ export function BrowserMock() {
           </div>
 
           {/* Viewport */}
-          <div className="flex-1 lg:bg-opacity-60 bg-zinc-100 dark:bg-zinc-800 overflow-hidden pb-[calc(5rem+env(safe-area-inset-bottom))] lg:p-3 lg:pb-[100px] h-full">
+          <div className="flex-1 min-h-0 lg:bg-opacity-60 bg-zinc-100 dark:bg-zinc-800 overflow-hidden lg:p-3 lg:pb-[100px] h-full">
             <div className="h-full overflow-auto lg:rounded-lg lg:shadow-md">
               <div className="h-full flex items-center justify-center">
                 {loading ? <Loader /> : null}
@@ -156,13 +156,14 @@ export function BrowserMock() {
                 />              </div>
             </div>
           </div>
+
+          <MobileNav
+            portfolios={sortedPortfolios}
+            selectedPortfolio={selectedPortfolio}
+            onSelectPortfolio={handleSelectPortfolio}
+          />
         </div>
       </Card>
-      <MobileNav
-        portfolios={sortedPortfolios}
-        selectedPortfolio={selectedPortfolio}
-        onSelectPortfolio={handleSelectPortfolio}
-      />
     </div>
   );
 }

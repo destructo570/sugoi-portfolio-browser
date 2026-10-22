@@ -30,10 +30,10 @@ export function MobileNav({ portfolios, selectedPortfolio, onSelectPortfolio }: 
     onSelectPortfolio(portfolios[nextIndex]);
   };
 
-  const buttonClass = "w-12 h-12 shrink-0 rounded-full shadow-lg backdrop-blur-md bg-white/70 hover:bg-white/90 dark:bg-zinc-800/80 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-200";
+  const buttonClass = "w-12 h-12 shrink-0 rounded-full shadow-sm bg-white hover:bg-zinc-50 dark:bg-zinc-800 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-200";
 
   return (
-    <div className="lg:hidden fixed bottom-4 inset-x-0 z-50 px-3 pb-[env(safe-area-inset-bottom)] flex items-center gap-3">
+    <div className="lg:hidden shrink-0 w-full px-3 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] flex items-center gap-3 bg-zinc-100 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
       <Button
         variant="ghost"
         size="icon"
@@ -44,7 +44,7 @@ export function MobileNav({ portfolios, selectedPortfolio, onSelectPortfolio }: 
         <ChevronLeft className="h-5 w-5" />
       </Button>
 
-      <div className="flex-1 flex items-center gap-2 min-w-0 h-12 pl-1.5 pr-4 rounded-full shadow-lg backdrop-blur-md bg-white/70 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700">
+      <div className="flex-1 flex items-center gap-2 min-w-0 h-12 pl-1.5 pr-4 rounded-full shadow-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700">
         <Avatar className="w-9 h-9">
           <AvatarImage src={selectedPortfolio?.profile} />
           <AvatarFallback className="text-xs">
